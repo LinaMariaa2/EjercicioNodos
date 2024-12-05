@@ -3,6 +3,7 @@ var body = document.getElementById("body");
 console.log(body);
 
 var celdaAcciones = document.getElementById("accion")
+var tablaAgre = document.getElementById("tablaTrabajo")
 
 // Array con 5 filas de datos ya ingresados 
 const array =[
@@ -56,47 +57,47 @@ const filas = tabla.querySelectorAll('tr');
 //creando botones dentro de la nueva columna 
 filas.forEach((fila, indice) => {
   if (indice>0) {
-  const btnEliminar = document.createElement("button");
-  btnEliminar.textContent = 'Eliminar';
-  fila.appendChild(btnEliminar);
+    const btnEliminar = document.createElement("button");
+    btnEliminar.textContent = 'Eliminar';
+    fila.appendChild(btnEliminar);
 
-  const btnActualizar = document.createElement("button");
-  btnActualizar.textContent = 'Actualizar';
-  fila.appendChild(btnActualizar);
+    const btnActualizar = document.createElement("button");
+    btnActualizar.textContent = 'Actualizar';
+    fila.appendChild(btnActualizar);
   }
   
 });
+
 //btn de nuevo
 btnNuevo = document.createElement("button");
 btnNuevo.textContent = "Nuevo";
 body.appendChild(btnNuevo);
 
-/*function btnNuevo(){
+function btnNuevo(){
   
 }
 btnNuevo.onclick = function(){
   Nuevo();
 }
-*/
 
+// funcion pra btn Actualizar
+function Actualizar(){
+  
+}
 
-/* 
+btnActualizar.onclick = function(){
+  Actualizar();
+}
+
+// funcion pra btn eliminar
 function Eliminar(){
-  tablaTrabajo.remove();
+  fila.remove();
 }
 
 btnEliminar.onclick = function(){
   Eliminar();
-}*/
+}
 
-
-
-
-
-
-// columna acciones y creacion de botones 
-//let acciones = document.getElementById("accionBotones")
-//btonActualizar = document.createElement("button")
 
 
 // Estilos 
